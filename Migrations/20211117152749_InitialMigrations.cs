@@ -12,9 +12,9 @@ namespace Commander.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    HowTo = table.Column<string>(nullable: true),
-                    Line = table.Column<string>(nullable: true),
-                    Platform = table.Column<string>(nullable: true)
+                    HowTo = table.Column<string>(maxLength: 250, nullable: false),
+                    Line = table.Column<string>(maxLength: 250, nullable: false),
+                    Platform = table.Column<string>(maxLength: 250, nullable: false)
                 },
                 constraints: table =>
                 {
