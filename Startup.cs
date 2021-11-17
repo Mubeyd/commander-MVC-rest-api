@@ -21,7 +21,9 @@ namespace Commander
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer
-            (Configuration.GetConnectionString("ConnectionStrings:CommanderConnection")));
+            (Configuration.GetConnectionString("CommanderConnection")));
+
+            System.Console.WriteLine(Configuration.GetConnectionString("CommanderConnection"));
 
             services.AddControllers();
 
