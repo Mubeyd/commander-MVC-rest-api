@@ -63,6 +63,9 @@ Version.cpp
 *.exe
 *.pdb
 /build/
+obj/
+*.obj
+*.iobj
 *.suo
 *.user
 _ReSharper.*/

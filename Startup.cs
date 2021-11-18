@@ -20,8 +20,11 @@ namespace Commander
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer
-            (Configuration.GetConnectionString("CommanderConnection")));
+            services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer(
+                System.Environment.GetEnvironmentVariable("CommanderConnection") ??
+                Configuration.GetConnectionString("CommanderConnection"))
+                );
+
 
             services.AddControllers();
 

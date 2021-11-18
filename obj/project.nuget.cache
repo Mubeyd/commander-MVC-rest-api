@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6+I9CfXA72nkVgzwBvcO7L7+jwKJV38LMTZ7DCA1lj1BeZIHsI7Ov3WgYNEYBEw576g1u7hQo7FN/I4JmI4u6A==",
+  "dgSpecHash": "XgqkZSkN0su9/KUl0ZkPmTyg+dWdv/KH2biyvwDIfcIvcZNhmXOIrfkLOkT3s1ueslk9B1hSEblRNACkPIB53Q==",
   "success": true,
   "projectFilePath": "D:\\Javascript_Udemy\\backend\\dot-net-core-MVC-rest-api\\Commander\\Commander.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ihsan Tek\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\Ihsan Tek\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Ihsan Tek\\.nuget\\packages\\dotnetenv\\2.2.0\\dotnetenv.2.2.0.nupkg.sha512",
     "C:\\Users\\Ihsan Tek\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Ihsan Tek\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
