@@ -26,17 +26,23 @@ namespace Commander.Data
 
         public IEnumerable<Command> GetAllCommands()
         {
-            return this._context.Commands.ToList();
+            return _context.Commands.ToList();
         }
 
         public Command GetCommandById(int id)
         {
-            return this._context.Commands.FirstOrDefault(item => item.Id == id);
+            return _context.Commands.FirstOrDefault(item => item.Id == id);
         }
 
         public bool SaveChanges()
         {
-            return (this._context.SaveChanges() >= 0);
+            return (_context.SaveChanges() >= 0);
+        }
+
+        public void UpdateCommand(Command cmd)
+        {
+            // not implementing it here
+            _context.Commands.Update(cmd);
         }
     }
 }
